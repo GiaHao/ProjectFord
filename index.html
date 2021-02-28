@@ -90,20 +90,166 @@
               </li>
             </ul>
             <ul class="navbar-nav nav__right">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="en"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   <img src="./img/account.svg" alt="account icon" />
-                  MY ACCOUNT
+                  <span>MY ACCOUNT</span>
                 </a>
+                <div class="dropdown-menu" aria-labelledby="en">
+                  <a class="dropdown-item" href="#">
+                    <span>Sign In</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Saved Items</span>
+                    <span>&gt;</span>
+                  </a>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FINANCE</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="en"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  FINANCE
+                </a>
+                <div class="dropdown-menu" aria-labelledby="en">
+                  <a class="dropdown-item" href="#">
+                    <span>Ford Credit Home</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Pay My Bill</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Apply for Credit</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Ford Credit Customer Support</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Financing Options</span>
+                    <span>&gt;</span>
+                  </a>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SUPPORT</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="en"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  SUPPORT
+                </a>
+                <div class="dropdown-menu" aria-labelledby="en">
+                  <a class="dropdown-item" href="#">
+                    <span>Ask For</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Owners</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Vehicle Support & How-Tos</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Vehicle Maintenance & Service</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>SYNC & Technology</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Wanrranty</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>FordPass</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Contact Ford</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-outline-secondary"
+                        type="button"
+                        id="button-addon2"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">EN</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="en"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  EN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="en">
+                  <a class="dropdown-item" href="#">
+                    <span>English</span>
+                    <span>&gt;</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span>Spanish</span>
+                    <span>&gt;</span>
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -111,11 +257,7 @@
       </header>
 
       <!-- CAROUSEL -->
-      <div
-        id="carousel__custom"
-        class="carousel slide"
-        data-ride="carousel"
-      >
+      <div id="carousel__custom" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li
             data-target="#carousel__custom"
@@ -132,12 +274,10 @@
               alt="image"
             />
             <div
-              class="carousel-caption d-none d-md-block carousel-caption__custom"
+              class="carousel-caption d-none d-block carousel-caption__custom"
             >
               <h5>Tough That Keeps Coming Back</h5>
-              <a href="#"
-                >2021 Ford F-150 <i class="fa fa-angle-right"></i
-              ></a>
+              <a href="#">2021 Ford F-150 <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
           <div class="carousel-item">
@@ -146,10 +286,10 @@
               class="d-block w-100"
               alt="image"
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-block">
               <h5>
-                Proud to be the 2021 North American Truck and Utility
-                Vehicle of the Year<sup>TM</sup>
+                Proud to be the 2021 North American Truck and Utility Vehicle of
+                the Year<sup>TM</sup>
               </h5>
               <a href="#">2021 F-150 <i class="fa fa-angle-right"></i></a>
               <a href="#"
@@ -183,7 +323,7 @@
       </div>
 
       <!-- VEHICLES -->
-      <section class="vehicles mt-5">
+      <section class="vehicles mt-5 contain-pad">
         <h3>Something for Everyone</h3>
         <p>
           See our full lineup of vehicles and find the one that best fits you.
@@ -193,19 +333,23 @@
       </section>
 
       <!-- MESSAGE -->
-      <section class="message mt-5">
+      <section class="message mt-5 contain-pad">
         <h3>Let’s Finish Strong</h3>
         <p>
           It’s in these moments that we must come together to protect our
           communities. Let’s look out for each other. Let’s Finish Strong.
         </p>
-        <video id="message__video" poster="./img/image.jpg">
-          <source
-            src="./img/Finish Strong_ Extended Version _ Super Bowl LV Commercial _ Ford.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <button id="play-video" class="btn"><i class="fa fa-play"></i></button>
+        <div>
+          <video id="message__video" poster="./img/image.jpg">
+            <source
+              src="./img/Finish Strong_ Extended Version _ Super Bowl LV Commercial _ Ford.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <button id="play-video" class="btn">
+            <i class="fa fa-play"></i>
+          </button>
+        </div>
       </section>
     </div>
 
