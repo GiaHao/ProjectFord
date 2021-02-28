@@ -1,0 +1,348 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contain-pad {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0 8px 4px -4px rgb(0 0 0 / 20%)
+}
+
+.header__top {
+    background-color: #f3f3f3;
+    font-size: 12px;
+    color: #102b4e;
+    font-weight: 600;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top a {
+    color: #102b4e;
+}
+
+.header__topLeft .mustang-img,
+.header__topLeft .bronco-img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.header__topLeft .mustang-img {
+    background-image: url(../img/mustang-icon.svg);
+    
+}
+
+.header__topLeft .bronco-img {
+    background-image: url(../img/bronco-icon.svg);
+}
+
+.header__topLeft a {
+    display: inline-block;
+}
+
+.header__topLeft a>span:nth-of-type(2),
+.header__topLeft a:last-of-type {
+    display: inline-block;
+    transform: translateY(-9px);
+}
+
+.header__topLeft a:nth-of-type(2),
+.header__topLeft a:last-of-type {
+    border-left: 1px solid #d6d5d5;
+    padding: 0 8px;
+}
+
+.header__topLeft a:nth-of-type(2) {
+    height: 30px;
+    padding-left: 15px;
+}
+
+a.header__topRight span {
+    display: inline-block;
+    color: #2861a4;  
+    transform: translateY(-3px); 
+}
+
+a.header__topRight i {
+    color: #102b4e;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.header__top a:hover,
+a.header__topRight:hover i {
+    color: #2861a4;
+    text-decoration: none;
+}
+
+.header__top a:hover .mustang-img {
+    background-image: url(../img/mustang-icon-hover.svg);
+}
+
+.header__top a:hover .bronco-img {
+    background-image: url(../img/bronco-icon-hover.svg);
+}
+
+/* NAVBAR */
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-brand {
+    display: inline-block;
+    background-image: url(../img/bsr-sprite2x.webp);
+    background-repeat: no-repeat;
+    background-position: -200px 0;
+    background-size: 400px 200px;
+    width: 93px;
+    height: 35px;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-light .navbar-nav a.nav-link {
+    font-size: 14px;
+    color: #0276b3;
+    font-weight: 600;
+    letter-spacing: .5;
+    margin: 0 5px;
+} 
+
+.nav-link img {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    transform: translateY(-1px);
+}
+
+.nav__right .nav-link {
+    font-size: 12px;
+}
+
+.nav__right li:first-child {
+    transform: translateY(-2px);
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+    color: #102b4e;
+}
+
+/* CAROUSEL */
+#carousel__custom {
+    margin-top: 0;
+}
+
+#carousel__custom .carousel-caption {
+    position: absolute;
+    top: 5%;
+    left: 45px;
+    right: 10%;
+    bottom: auto;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.carousel-caption h5 {
+    position: relative;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.carousel-caption h5 sup {
+    font-size: 22px;
+    top: -1.1em;
+}
+
+.carousel-caption a {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.carousel-caption a .fa-angle-right {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.carousel-caption a:hover {
+    color: #102b4e;
+    text-decoration: none;
+}
+
+.carousel-caption a:hover .fa-angle-right {
+    border-color: #102b4e;
+    background-color: #102b4e;
+    color: #3C596D;
+}
+
+.carousel-caption__custom {
+    bottom: 10% !important;
+    right: 0 !important;
+}
+
+.carousel-caption__custom:hover a {
+    color: #fff;
+}
+
+.carousel-caption__custom:hover a .fa-angle-right {
+    background-color: #fff;
+    color: #25393D;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 10;
+    top: 50%;
+    bottom: auto;
+    display: inline-block;
+    width: 3%;
+    height: 8%;
+    background-color: rgba(51, 51, 51, 0.6);
+    opacity: 1;
+}
+
+#carousel__custom .carousel-control-prev-icon,
+#carousel__custom .carousel-control-next-icon {
+    background-image: none;
+    font-size: 2.2rem;
+    padding-top: 2%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #fff;
+    color: #0276b3;
+    border: 1px solid #0276b3;
+    border-right: none;
+}
+
+#carousel__custom .carousel-indicators {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 60px;
+    height: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .5s;
+    opacity: 1;
+    background-clip: border-box;
+}
+
+.carousel-indicators li:hover {
+    transform: scale(1.5);
+}
+
+#carousel__custom .carousel-indicators li.active {
+    transform: scale(1.5);
+    background-color: transparent;
+}
+
+/* VEHICLES */
+.vehicles, .message {
+    text-align: center;
+}
+
+.vehicles h3, .message h3 {
+    font-size: 42px;
+}
+
+.vehicles a {
+    display: block;
+    width: 200px;
+    background-color: #0276b3;
+    border: 1px solid #0276b3;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 0;
+}
+
+.vehicles a:hover {
+    background-color: #fff;
+    color: #0276b3;
+    text-decoration: none;
+}
+
+.vehicles img {
+    display: block;
+    width: 100%;
+    margin-top: 2%;
+}
+
+/* MESSAGE */
+.message {
+    position: relative;
+}
+
+.message p {
+    max-width: 740px;
+    margin: 15px auto;
+}
+
+.message #message__video {
+    max-width: 80%;
+    margin-top: 15px;
+}
+
+.message #play-video {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    font-size: 26px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.message #message__video:hover+#play-video, 
+.message #play-video:hover {
+    background-color: #0276b3;
+}
