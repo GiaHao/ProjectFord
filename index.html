@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div id="container-bg"></div>
+    <!-- <div id="container-bg"></div> -->
     <div class="container-fluid">
       <!-- HEADER -->
       <header>
@@ -1175,6 +1175,11 @@
       <!-- END FOOTER -->
     </div>
 
+    <!-- Back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+
     <!-- JQuery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -1191,6 +1196,10 @@
     <script>
       $(".carousel").carousel({ interval: false });
     </script>
+
+    <!-- Back to top js -->
+    <script src="./js/util.js"></script>
+    <script src="./js/backToTop.js"></script>
 
     <!-- Main js -->
     <script src="./js/main.js"></script>

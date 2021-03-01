@@ -17,7 +17,7 @@ body {
   overflow: hidden;
 }
 
-.container-background {
+/* .container-background {
   position: absolute;
   top: 121px;
   left: 0;
@@ -25,6 +25,32 @@ body {
   bottom: 0;
   background-color: rgba(51, 51, 51, 0.7);
   z-index: 99;
+} */
+
+.backToTop {
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  font-size: 25px;
+  color: #fff;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
 }
 /* ------------------------------------------ */
 
