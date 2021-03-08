@@ -477,7 +477,7 @@ a.header__topRight:hover i {
 }
 
 .fg .item1 {
-  background-image: url(/img/deal.jpeg);
+  background-image: url(../img/deal.jpeg);
   background-size: cover;
   background-position: center center;
   height: 200px;
